@@ -1,0 +1,21 @@
+services:
+  local-db:
+    image: postgres
+    container_name: local-db-v1
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: local-db-v1
+  prod-db:
+    image: postgres
+    container_name: prod-db-v1
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_PASSWORD: prod-db-v1
+  ihm-adminer:
+    image: adminer:4.8.0-standalone
+    container_name: ihm-db-test
+    ports:
+      - 5435:8080
+

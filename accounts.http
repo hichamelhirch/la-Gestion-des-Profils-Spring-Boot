@@ -1,0 +1,11 @@
+
+POST http://localhost:8080/v1/accounts
+Content-Type: application/json
+
+{
+  "email": "hichamhicham@gmail.com",
+  "password": "test"
+}
+###
+GET http://localhost:8800/v1/accounts
+Accept: application/json
